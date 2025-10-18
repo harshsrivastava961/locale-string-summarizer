@@ -1,0 +1,19 @@
+{
+  "name": "locale-string-summarizer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "description": "A small utility that summarizes text intelligently based on detected locale/language.",
+  "repository": { "type": "git", "url": "https://github.com/harshsrivastava961/locale-string-summarizer.git" },
+  "keywords": ["summary", "text", "locale", "nlp", "utility"],
+  "author": "Harsh Srivastava",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
