@@ -8,9 +8,9 @@
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
-  "description": "A small utility that summarizes text intelligently based on detected locale/language.",
+  "description": "Intelligent text summarizer with automatic language detection. Supports English, Spanish, and Russian. Extract keywords or get concise summaries with TypeScript support.",
   "repository": { "type": "git", "url": "https://github.com/harshsrivastava961/locale-string-summarizer.git" },
-  "keywords": ["summary", "text", "locale", "nlp", "utility"],
+  "keywords": ["text-summarizer", "text-summary", "summarizer", "text", "locale", "nlp", "utility", "typescript", "javascript", "ai", "natural-language-processing", "multilingual", "spanish", "russian", "english"],
   "author": "Harsh Srivastava",
   "license": "MIT",
   "devDependencies": {
