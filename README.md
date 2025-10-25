@@ -1,15 +1,18 @@
-# locale-string-summarizer
+# Locale String Summarizer
+
+[![npm version](https://img.shields.io/npm/v/locale-string-summarizer.svg)](https://www.npmjs.com/package/locale-string-summarizer)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight TypeScript utility that intelligently summarizes text based on detected language/locale. Automatically detects the language and provides concise summaries or keyword extraction tailored to the specific locale.
 
 ## Features
 
-- 🌍 **Automatic Locale Detection**: Detects Spanish, Russian, and English text automatically
-- 📝 **Smart Summarization**: Extracts key sentences while preserving meaning
-- 🔑 **Keyword Extraction**: Get the most important keywords from your text
-- 🎯 **Configurable Options**: Customize sentence count and output format
-- 📦 **Zero Dependencies**: Lightweight with no external dependencies
-- 🔧 **TypeScript Support**: Full type definitions included
+- **Automatic Locale Detection**: Detects Spanish, Russian, and English text automatically
+- **Smart Summarization**: Extracts key sentences while preserving meaning
+- **Keyword Extraction**: Get the most important keywords from your text
+- **Configurable Options**: Customize sentence count and output format
+- **Zero Dependencies**: Lightweight with no external dependencies
+- **TypeScript Support**: Full type definitions included
 
 ## Installation
 
@@ -22,9 +25,10 @@ npm install locale-string-summarizer
 ### Basic Usage
 
 ```typescript
-import { summarizeText } from 'locale-string-summarizer';
+import { summarizeText } from "locale-string-summarizer";
 
-const text = "This is a very long sentence that contains multiple ideas and concepts. It should be summarized into a shorter version that captures the main points.";
+const text =
+  "This is a very long sentence that contains multiple ideas and concepts. It should be summarized into a shorter version that captures the main points.";
 
 // Basic summarization
 const summary = summarizeText(text);
@@ -50,12 +54,14 @@ console.log(customSummary);
 
 ```typescript
 // Spanish text
-const spanishText = "Este es un texto muy largo en español que contiene múltiples ideas y conceptos.";
+const spanishText =
+  "Este es un texto muy largo en español que contiene múltiples ideas y conceptos.";
 const spanishSummary = summarizeText(spanishText);
 console.log(spanishSummary);
 
-// Russian text  
-const russianText = "Это очень длинный текст на русском языке который должен быть сокращен.";
+// Russian text
+const russianText =
+  "Это очень длинный текст на русском языке который должен быть сокращен.";
 const russianSummary = summarizeText(russianText);
 console.log(russianSummary);
 ```
@@ -67,10 +73,12 @@ console.log(russianSummary);
 Summarizes the input text based on detected locale.
 
 **Parameters:**
+
 - `text` (string): The input text to summarize
 - `options` (SummarizerOptions, optional): Configuration options
 
 **SummarizerOptions:**
+
 - `maxSentences?: number` - Maximum number of sentences to return (default: 2)
 - `keywordsOnly?: boolean` - If true, returns only keywords instead of sentences (default: false)
 
